@@ -1,68 +1,80 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Jitsi Meet - Secure, Simple and Scalable Video Conferences
 
-## Available Scripts
+Jitsi Meet is an open-source (Apache) WebRTC JavaScript application that uses [Jitsi Videobridge](https://jitsi.org/videobridge) to provide high quality, [secure](https://jitsi.org/security) and scalable video conferences. Jitsi Meet in action can be seen at [here at the session #482 of the VoIP Users Conference](http://youtu.be/7vFUVClsNh0).
 
-In the project directory, you can run:
+The Jitsi Meet client runs in your browser, without installing anything else on your computer. You can try it out at https://meet.jit.si.
 
-### `yarn start`
+Jitsi Meet allows very efficient collaboration. Users can stream their desktop or only some windows. It also supports shared document editing with Etherpad.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+On the client side, no installation is necessary. You just point your browser to the URL of your deployment. This section is about installing a Jitsi Meet suite on your server and hosting your own conferencing service.
 
-### `yarn test`
+Installing Jitsi Meet is a simple experience. For Debian-based system, following the [quick install](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-quickstart) document, which uses the package system. You can also see a demonstration of the process in [this tutorial video](https://jitsi.org/tutorial).
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+For other systems, or if you wish to install all components manually, see the [detailed manual installation instructions](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-manual).
 
-### `yarn build`
+Installation with Docker is also available. Please see the [instruction](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-docker).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Download
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+| Latest stable release | [![release](https://img.shields.io/badge/release-latest-green.svg)](https://github.com/jitsi/jitsi-meet/releases/latest) |
+|---|---|
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can download Debian/Ubuntu binaries:
+* [stable](https://download.jitsi.org/stable/) ([instructions](https://jitsi.org/downloads/ubuntu-debian-installations-instructions/))
+* [testing](https://download.jitsi.org/testing/) ([instructions](https://jitsi.org/downloads/ubuntu-debian-installations-instructions-for-testing/))
+* [nightly](https://download.jitsi.org/unstable/) ([instructions](https://jitsi.org/downloads/ubuntu-debian-installations-instructions-nightly/))
 
-### `yarn eject`
+You can download source archives (produced by ```make source-package```):
+* [source builds](https://download.jitsi.org/jitsi-meet/src/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Mobile apps
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* [Android](https://play.google.com/store/apps/details?id=org.jitsi.meet)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[<img src="resources/img/google-play-badge.png" height="50">](https://play.google.com/store/apps/details?id=org.jitsi.meet)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* [Android (F-Droid)](https://f-droid.org/en/packages/org.jitsi.meet/)
 
-## Learn More
+[<img src="resources/img/f-droid-badge.png" height="50">](https://f-droid.org/en/packages/org.jitsi.meet/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [iOS](https://itunes.apple.com/us/app/jitsi-meet/id1165103905)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[<img src="resources/img/appstore-badge.png" height="50">](https://itunes.apple.com/us/app/jitsi-meet/id1165103905)
 
-### Code Splitting
+You can also sign up for our open beta testing here:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+* [Android](https://play.google.com/apps/testing/org.jitsi.meet)
+* [iOS](https://testflight.apple.com/join/isy6ja7S)
 
-### Analyzing the Bundle Size
+## Release notes
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Release notes for Jitsi Meet are maintained on [this repository](https://github.com/jitsi/jitsi-meet-release-notes).
 
-### Making a Progressive Web App
+## Development
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+For web development see [here](https://jitsi.github.io/handbook/docs/dev-guide/dev-guide-web), and for mobile see [here](https://jitsi.github.io/handbook/docs/dev-guide/dev-guide-mobile).
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+If you are looking to contribute to Jitsi Meet, first of all, thank you! Please
+see our [guidelines for contributing](CONTRIBUTING.md).
 
-### Deployment
+## Embedding in external applications
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Jitsi Meet provides a very flexible way of embedding in external applications by using the [Jitsi Meet API](doc/api.md).
 
-### `yarn build` fails to minify
+## Security
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The security section here was starting to feel a bit too succinct for the complexity of the topic, so we created a post that covers the topic much more broadly here: https://jitsi.org/security
+
+The section on end-to-end encryption in that document is likely going to be one of the key points of interest: https://jitsi.org/security/#e2ee
+
+## Security issues
+
+For information on reporting security vulnerabilities in Jitsi Meet, see [SECURITY.md](./SECURITY.md).
+
+## Acknowledgements
+
+Jitsi Meet started out as a sample conferencing application using Jitsi Videobridge. It was originally developed by ESTOS' developer Philipp Hancke who then contributed it to the community where development continues with joint forces!

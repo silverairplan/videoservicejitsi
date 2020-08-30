@@ -1,0 +1,27 @@
+.subject {
+    height:70px;
+    background-color: #00314F;
+    opacity: 0.9;
+    display: flex;
+    padding: 0px 40px;
+    align-items: center;
+
+    &.visible {
+        top: 0px;
+    }
+
+    &-text {
+        font-weight: 600;
+        font-size: 16px;
+        color: white;
+    }
+
+    &-conference-timer {
+        background-color: #2CDDE9;
+        border-radius: 6px;
+        color: black;
+        padding:0px 12px;
+        font-size: 16px;
+        margin: 0px 20px;
+    }
+}
